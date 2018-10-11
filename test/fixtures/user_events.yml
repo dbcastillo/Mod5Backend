@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-10-11
+  location: MyString
+  attendees: 1
+  notes: MyString
+  guest_id: 1
+
+two:
+  date: 2018-10-11
+  location: MyString
+  attendees: 1
+  notes: MyString
+  guest_id: 1
