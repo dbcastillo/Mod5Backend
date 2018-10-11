@@ -1,4 +1,4 @@
-class Api::V1::EventsController < ApplicationController
+class EventsController < ApplicationController
   before_action :set_event, only: [:show, :update, :destroy]
 
   # GET /events
@@ -46,6 +46,6 @@ class Api::V1::EventsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def event_params
-      params.require(:event).permit(:name, :host_id)
+      params.require(:event).permit(:name, :date, :location, :attendees, :notes, :image_url, :host_id)
     end
 end

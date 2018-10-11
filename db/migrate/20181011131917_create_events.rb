@@ -6,6 +6,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.string :location
       t.integer :attendees
       t.string :notes
+      t.string :image_url
       t.integer :host_id
 
       t.timestamps

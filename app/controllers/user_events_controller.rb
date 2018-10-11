@@ -1,4 +1,4 @@
-class Api::V1::UserEventsController < ApplicationController
+class UserEventsController < ApplicationController
   before_action :set_user_event, only: [:show, :update, :destroy]
 
   # GET /user_events
@@ -46,6 +46,6 @@ class Api::V1::UserEventsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_event_params
-      params.require(:user_event).permit(:date, :location, :attendees, :notes, :guest_id)
+      params.require(:user_event).permit(:event_id, :guest_id)
     end
 end

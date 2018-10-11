@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2018_10_11_131917) do
     t.string "location"
     t.integer "attendees"
     t.string "notes"
+    t.string "image_url"
     t.integer "host_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
