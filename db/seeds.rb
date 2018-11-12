@@ -1,6 +1,6 @@
-alfred = User.create(username: 'alfred', password: '123')
-andrew = User.create(username: 'andrew', password: '123')
-alex = User.create(username: 'aaron', password: '123')
+alfred = User.create(username: 'Alfred', password: '123')
+andrew = User.create(username: 'Andrew', password: '123')
+alex = User.create(username: 'Alex', password: '123')
 
 king_concert = alfred.host_events.create(
   event_name: 'Emily King Concert',
@@ -93,7 +93,7 @@ comedy_show = alfred.host_events.create(
 brooklyn_bar_hop = andrew.host_events.create(
   event_name: 'Brooklyn Bar Hop',
   event_description: 'Grab drinks at Brooklyns finest',
-  host_name: 'Nkosi',
+  host_name: 'Andrew',
   host_description: 'I know all the best bars',
   date: 'Sat Oct 13 2018',
   location: 'BK Tavern on the Ridge',
@@ -172,4 +172,7 @@ pizza_making.guests << andrew
 
 brooklyn_bar_hop.guests << alex
 king_concert.guests << alex
+king_concert.guests << andrew
+
+
 cooking_class.guests << alex
