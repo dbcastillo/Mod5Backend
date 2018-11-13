@@ -1,3 +1,6 @@
+# Link to Demo Video
+* https://youtu.be/5qvZ9ssDsOg
+
 # Join Me
 
 Join Me, an event app allowing users to browse and host/attend community created events.
